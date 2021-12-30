@@ -1,47 +1,55 @@
 import React from "react";
-import { FaBars, FaSkull, FaRegBellSlash, FaFistRaised, FaPersonBooth } from 'react-icons/fa'
+import { FaBars, FaSkull, FaRegBellSlash, FaFistRaised } from 'react-icons/fa'
 
-export const links = [
+export const homeLink = [
     {
         id:1,
         url: '/',
-        text: 'home'
+        text: 'home' 
+    }
+]
 
-    },
+
+export const links = [
+   
     {
         id:2,
         url: '/about',
-        text: 'about'
+        text: 'About'
 
     },
     {
         id:3,
-        url: '/event',
-        text: 'event'
+        url: '/events',
+        text: 'Event'
 
     },
     {
         id:4,
         url: '/local-fights',
-        text: 'fights near me'
+        text: 'Fights Near Me'
 
-    },
+    }
+    
+]
+
+export const iconLinks = [
     {
         id:5,
         url: '/profile',
-        text: 'profile'
+       icon: <FaSkull fontSize="x-large" />
 
     },
     {
         id:6,
         url: '/my-fights',
-        text: 'my-fights'
+        icon: <FaFistRaised fontSize="x-large"/>
 
     },
-    {
-        id:7,
-        url: '/login',
-        text: 'login'
+    // {
+    //     id:7,
+    //     url: '/login',
+    //     text: 'login'
 
-    }
+    // }
 ]
