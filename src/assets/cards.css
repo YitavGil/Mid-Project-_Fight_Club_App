@@ -1,0 +1,95 @@
+@import url(//db.onlinewebfonts.com/c/d091f3206c618342e183bce6e68aaa37?family=Mortal+Kombat+1);
+
+@import url('http://fonts.cdnfonts.com/css/mortal-kombat');
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+.card {
+    position: relative;
+    width: 37.5rem;
+    padding: 1.25rem;
+    max-width: 85vw;
+    height: 50vh;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+   
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    cursor: pointer;
+}
+
+.card > h3 {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+}
+
+.swiper{
+    position: absolute;
+}
+
+/* -------------- My Matches Styling --------------*/
+
+.match-title {
+    width: 100%;
+    text-align: center;
+}
+
+.match-title > h1 {
+    color: #580309;
+    font-family: "Mortal Kombat 2";
+}
+
+.matches-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.matches-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    margin: 1rem;
+}
+
+.match {
+    position: relative;
+    width: 25.5rem;
+    padding: 1.25rem;
+    max-width: 85vw;
+    height: 50vh;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.match > h3 {
+    text-align: center;
+    width: 80%;
+    position: absolute;
+    bottom: 1rem;
+    font-family: "Mortal Kombat 2";
+    color: #641313;
+    font-weight: bold;
+    font-size: 2rem;
+}

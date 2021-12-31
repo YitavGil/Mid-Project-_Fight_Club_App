@@ -1,9 +1,11 @@
 import React, {useState, useRef, useEffect} from 'react';
 import { FaBars, FaSkull, FaRegBellSlash, FaFistRaised } from 'react-icons/fa'
 import { links, iconLinks } from './linksData';
+import {Link} from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar(props) {
     const [showLinks, setShowLinks] = useState(false);
+    const [iconSize, setIconSize] = useState("x-large")
     const linksContainerRef = useRef(null);
     const linksRef = useRef(null);
     const toggleLinks = () => {
@@ -18,11 +20,18 @@ export default function Navbar() {
         }
       }, [showLinks]);
 
+      useEffect(() =>{
+        setIconSize("xx-large");
+        setTimeout(() =>{
+            setIconSize("x-large");
+        },500)
+      }, [props.matches])
+
     return (
         <nav>
             <div className='nav-center'>
                 <div className='nav-header'>
-                    <h1 className='potter-logo'>BeatIt</h1>
+                    <h1 ><Link className='potter-logo' to="/" >BeatIt </Link></h1>
                     <button onClick={toggleLinks} className='nav-toggle'>
                     <FaBars />
                     </button>
@@ -32,7 +41,7 @@ export default function Navbar() {
                      {links.map((link) => {
                          const {id, url, text} = link;
                          return( <li key={id}>
-                             <a href={url}>{text}</a>
+                             <Link to={url}>{text}</Link>
                          </li>
                          )
                      })}
@@ -40,11 +49,13 @@ export default function Navbar() {
                 </div>
                 
                 <ul className='profile-icons'>
-                  {iconLinks.map((iconLink) =>{
+                  {/* {iconLinks.map((iconLink) =>{
                       const {id,url,icon} = iconLink;
                       return <li key={id}>
-                          <a href={url}>{icon}</a></li>
-                  })}
+                          <Link to={url}>{icon}</Link></li>
+                  })} */}
+                  <li><Link to='/my-fights'><FaFistRaised fontSize={iconSize}/></Link></li>
+                  <li><Link to='/profile'><FaSkull fontSize="x-large" /></Link></li>
                     <a>
                     <FaRegBellSlash fontSize="x-large"/>
                     </a>
