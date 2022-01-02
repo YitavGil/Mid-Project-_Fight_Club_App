@@ -1,0 +1,22 @@
+export default [
+    {
+        id:1,
+       img:"https://i.ytimg.com/vi/h_FKYRZWV60/hqdefault.jpg"
+    },
+    {
+        id:2,
+       img:"https://pig.gg/wp-content/uploads/2017/04/Super-Smash-Bros.-1.jpg"
+    },
+    {
+        id:3,
+       img:"https://static.comicvine.com/uploads/original/3/39636/2652149-a3.jpg"
+    },
+    {
+        id:4,
+       img:"https://www.thesportsman.com/media/images/admin/boxing/rocky-iiijpg.jpg"
+    },
+    {
+        id:5,
+       img:"https://i.insider.com/598494454fc3c01c018b57e1?width=1000&format=jpeg&auto=webp"
+    },
+]

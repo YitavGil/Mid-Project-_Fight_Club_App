@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 export default function Navbar(props) {
     const [showLinks, setShowLinks] = useState(false);
-    const [iconSize, setIconSize] = useState("x-large")
+    const [iconState, setIconState] = useState("fist")
     const linksContainerRef = useRef(null);
     const linksRef = useRef(null);
     const toggleLinks = () => {
@@ -21,9 +21,9 @@ export default function Navbar(props) {
       }, [showLinks]);
 
       useEffect(() =>{
-        setIconSize("xx-large");
+        setIconState("fist-when-match");
         setTimeout(() =>{
-            setIconSize("x-large");
+          setIconState("fist");
         },500)
       }, [props.matches])
 
@@ -54,7 +54,7 @@ export default function Navbar(props) {
                       return <li key={id}>
                           <Link to={url}>{icon}</Link></li>
                   })} */}
-                  <li><Link to='/my-fights'><FaFistRaised fontSize={iconSize}/></Link></li>
+                  <li><Link to='/my-fights'><FaFistRaised className={iconState} /></Link></li>
                   <li><Link to='/profile'><FaSkull fontSize="x-large" /></Link></li>
                     <a>
                     <FaRegBellSlash fontSize="x-large"/>

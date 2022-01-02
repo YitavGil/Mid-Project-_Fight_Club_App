@@ -72,7 +72,6 @@ body{
 }
 
 .links a:hover {
-  /* padding-left: 1.5rem; */
   color: #D3D3D3
 }
 
@@ -102,6 +101,17 @@ body{
 
 .show-container {
   height: 10rem;
+}
+
+.fist{
+  font-size: x-large;
+  transition: var(--transition);
+}
+
+.fist-when-match{
+  font-size: 70px;
+  transition: var(--transition);
+  color: #D3D3D3;
 }
 
 @media screen and (min-width: 800px) {

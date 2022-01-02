@@ -1,0 +1,42 @@
+
+.popup {
+    position: fixed;
+    width:50%;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 30rem;
+    top:10rem;
+    animation: 0.2s ease-out 0s 1 slideInFromTop;
+}
+
+.popup-inner {
+    border: 2px solid green;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    width: 100%;
+    max-width: 50vw;
+    height: 40vh;
+    background-color:transparent;
+    color: green;
+    font-size: 4rem;
+    font-family: "mortal kombat 4"
+}
+
+
+
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }

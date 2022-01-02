@@ -21,7 +21,7 @@ export const links = [
     {
         id:3,
         url: '/events',
-        text: 'Event'
+        text: 'Events'
 
     },
     {

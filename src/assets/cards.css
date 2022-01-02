@@ -33,7 +33,13 @@
 
 .card > h3 {
     position: absolute;
-    color: white;
+    width: 90%;
+    font-family: "Mortal Kombat 2";
+    color: #641313;
+    text-align: center;
+    font-size: 3rem;
+    border-radius: 20px;
+    background-color:rgb(8, 8, 8);
     bottom: 10px;
 }
 
@@ -46,6 +52,7 @@
 .match-title {
     width: 100%;
     text-align: center;
+
 }
 
 .match-title > h1 {
@@ -60,36 +67,90 @@
     align-items: flex-start;
     margin-top: 2rem;
     padding: 1rem;
+    font-size: 2rem;
+    font-family: "Mortal Kombat 1";
+    
 }
 
-.matches-container{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5vh;
-    margin: 1rem;
-}
 
 .match {
     position: relative;
-    width: 25.5rem;
+    width: 15.5rem;
     padding: 1.25rem;
     max-width: 85vw;
-    height: 50vh;
-    border-radius: 20px;
+    height: 25vh;
+    border-radius: 50%;
     background-size: cover;
     background-position: center;
     box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
-    margin-top: 1rem;
-    cursor: pointer;
+    margin-top: 3rem;
+    border:2px solid yellow;
+    
+    
 }
 
 .match > h3 {
     text-align: center;
-    width: 80%;
+    width: 70%;
     position: absolute;
     bottom: 1rem;
     font-family: "Mortal Kombat 2";
     color: #641313;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    background-color:#080808;
+    border-radius: 20px;
+    margin-left: 1.2rem;
+    margin-bottom: 1rem;
 }
+.forfeit-btn{
+    cursor: pointer;
+    border-radius: 50%;
+    width:4vw;
+    height:5vh;
+    position: absolute;
+    background-color:#811a1a;
+    font-family: 'Mortal Kombat 2';
+    font-weight: 700;
+    z-index: 999;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .matches-container{
+        align-items: center;
+    }
+
+}
+
+/* -------------- Oponnent Details Styling --------------*/
+.opponent{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* position: absolute; */
+    border:2px solid green;
+   
+}
+
+.info-container {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.secondary-title{
+    border-bottom: 2px solid black;
+    width: 50%;
+    margin-left: 30rem;
+    
+}
+
