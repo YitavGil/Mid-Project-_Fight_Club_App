@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Wrapper} from "@googlemaps/react-wrapper";
 import "./App.css";
 import Navbar from "./comps/Navbar";
 import SwapCards from "./comps/SwapCards";
@@ -62,7 +61,6 @@ function App() {
     setPopup(false);
   };
 
-  let componentMounted = true;
 
   useEffect(() => {
     const strUser = localStorage.getItem('user-signin');
@@ -74,7 +72,7 @@ function App() {
       console.log(tempMatch);
       setMatches(JSON.parse(tempMatch))
     }
-    let proxy = "https://api.codetabs.com/v1/proxy/?quest=";
+  
     const getHeroes = async () => {
       setLoading(true);
       const response = await fetch(
@@ -89,7 +87,7 @@ function App() {
       // }
 
       //return () => {
-      componentMounted = false;
+      
       //}
     };
 
