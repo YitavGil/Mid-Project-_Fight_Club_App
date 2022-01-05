@@ -1,6 +1,4 @@
-import React, {useEffect, useState, useRef} from 'react'
-import axios from 'axios';
-import { Wrapper, Status, google } from "@googlemaps/react-wrapper";
+import React, {useEffect, useState} from 'react';
 import '../assets/nearme.css';
 
 const NearMe = (props) => {
@@ -9,7 +7,7 @@ const NearMe = (props) => {
         
     const getRandomHero = () => {
         let randomNum =  Math.floor(Math.random() * props.heros.length)
-        if(!props.heros || props.heros.length == 0){
+        if(!props.heros || props.heros.length === 0){
             return;
         }
         console.log(randomNum, props.heros[randomNum]);
@@ -38,6 +36,8 @@ const NearMe = (props) => {
             console.log(tempArray)
             setPairs(tempArray)
             //findFights()
+
+         
            
         },[])
         // let proxy = "https://api.codetabs.com/v1/proxy/?quest=";
@@ -68,7 +68,7 @@ const NearMe = (props) => {
            <div className='versus' key={persons.first.id} style={{display: 'flex'}}>
             <div 
             style={{backgroundImage: `url(${persons.first.images.md})`}} 
-            className='match'>
+            className='vs-match'>
             <h3>{persons.first.name}</h3>
             </div>
             <h1 className='vs-title'>VS</h1>
@@ -77,7 +77,7 @@ const NearMe = (props) => {
             </Wrapper> */}
             <div 
             style={{backgroundImage: `url(${persons.second.images.md})`}} 
-            className='match'>
+            className='vs-match'>
             <h3>{persons.second.name}</h3>
             </div>
         
