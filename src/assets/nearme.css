@@ -16,6 +16,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    
 }
 
 .vs-match > h3{
@@ -28,4 +29,14 @@
     color: #741717;
     background: #141414;
     border-radius: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .vs-match{
+        width: 30vw;
+    }
+
+    .vs-match > h3 {
+        left:2rem;
+    }
 }
