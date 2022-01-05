@@ -5,14 +5,14 @@ import '../assets/cards.css';
 const SwapCards= (props) => {
     const [person, setPerson] = useState(null)
 
-    const makeRandomNumber = () => {
-      const randomNum =  Math.floor(Math.random() * props.heros.length)
-      setPerson(randomNum)
-    }
+    // const makeRandomNumber = () => {
+    //   const randomNum =  Math.floor(Math.random() * props.heros.length)
+    //   setPerson(randomNum)
+    // }
  
     const getRandomHero = () => {
-        const randomNum =  Math.floor(Math.random() * props.heros.length)
-        if(!props.heros || props.heros.length == 0){
+        let randomNum =  Math.floor(Math.random() * props.heros.length)
+        if(!props.heros || props.heros.length === 0){
             return;
         }
         console.log(randomNum, props.heros[randomNum]);

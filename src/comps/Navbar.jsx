@@ -1,6 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react';
 import { FaBars, FaSkull, FaRegBellSlash, FaFistRaised } from 'react-icons/fa'
-import { links, iconLinks } from './linksData';
+import { links } from './linksData';
 import {Link} from "react-router-dom";
 
 export default function Navbar(props) {
@@ -54,11 +54,7 @@ export default function Navbar(props) {
                 
                 <ul className='profile-icons'>
                   <span className='sign-out' onClick={props.Logout}>Sign Out</span>
-                  {/* {iconLinks.map((iconLink) =>{
-                      const {id,url,icon} = iconLink;
-                      return <li key={id}>
-                          <Link to={url}>{icon}</Link></li>
-                  })} */}
+                
                   <li><Link to='/my-fights'><FaFistRaised className={iconState} /></Link></li>
                   <li><Link to='/profile'><FaSkull fontSize="x-large" /></Link></li>
                     <a>

@@ -15,7 +15,7 @@ const Matches = (props) => {
                return(
                <div key={person.name}> 
                <div className='match'>
-                    <img src={person.images.md} />
+                    <img src={person.images.md} alt="fighter" />
                 <h3>{person.name}</h3>
                 <button className='forfeit-btn' onClick={()=>props.removeMatch(person.id)}>Forfeit Match</button>
                 <div className='appearnce'>
@@ -45,38 +45,7 @@ const Matches = (props) => {
             })}
             </div>
 
-            {/* <div className='opponent'>
-                 
-                {props.matches.map((person) => {
-                    return (
-                       <div key={person.id}>
-                         
-                        <div className='info-container'>
-                            <div className='appearnce'>
-                                    <h4>Appearnce: </h4>
-                                    <h6>Height: {person.appearance.height}</h6>
-                                    <h6>Weight: {person.appearance.weight}</h6>
-                                    <h6>Race: {person.appearance.race}</h6>
-                                </div>
-                                <div className='powerstats'>
-                                    <h4>Powerstats: </h4>
-                                    <h6>Intelligence: {person.powerstats.intelligence}</h6>
-                                    <h6>Strength: {person.powerstats.strength}</h6>
-                                    <h6>Speed: {person.powerstats.speed}</h6>
-                                </div>
-                                <div className="biography">
-                                    <h4>Biography: </h4>
-                                    <h6>AlterEgos: {person.biography.alterEgos}</h6>
-                                    <h6>Occupation: {person.work.occupation}</h6>
-                                </div>
-
-                        </div>
-                        </div> 
-                    )
-                })}
-                                
-             </div> */}
-
+           
             
         </div>
     )
