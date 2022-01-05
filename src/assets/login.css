@@ -1,5 +1,4 @@
 .login-form{
-    border: 2px solid red;
     height: 80vh;
     display: flex;
     flex-direction: column;
