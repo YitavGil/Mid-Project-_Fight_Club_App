@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
 import { GlobalContext } from '../context/GlobalState';
 import Images from '../assets/Images';
 
@@ -11,13 +11,19 @@ const Event = ({item}) => {
         return imageArray[randomNumber].img
     }
 
+    useEffect(() => {
+        setFightImage(
+            getRandomImage()
+        )
+    }, [])
+
 
     const { deleteEvent } = useContext(GlobalContext);
     return (
         <div>
               <li>
                     <h2><span className='event-type'>{item.event}</span></h2>
-                    <img src={getRandomImage()} />
+                    <img src={fightImage} />
                     <h3><span className='event-time'>{item.time}</span></h3>
                     <span onClick={() => deleteEvent(item.id)} className='action'> &#10007;</span>
                 </li>

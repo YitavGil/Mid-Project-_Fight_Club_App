@@ -14,8 +14,8 @@ export const links = [
    
     {
         id:2,
-        url: '/about',
-        text: 'About'
+        url: '/premium',
+        text: 'Premium'
 
     },
     {

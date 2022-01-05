@@ -114,6 +114,15 @@ body{
   color: #D3D3D3;
 }
 
+.sign-out{
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.sign-out:hover{
+  color: #D3D3D3;
+}
+
 @media screen and (min-width: 800px) {
   .nav-center {
     max-width: 100%;

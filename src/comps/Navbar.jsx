@@ -6,6 +6,7 @@ import {Link} from "react-router-dom";
 export default function Navbar(props) {
     const [showLinks, setShowLinks] = useState(false);
     const [iconState, setIconState] = useState("fist")
+    const [keepMatches, setKeepMatches] = useState(0)
     const linksContainerRef = useRef(null);
     const linksRef = useRef(null);
     const toggleLinks = () => {
@@ -21,10 +22,13 @@ export default function Navbar(props) {
       }, [showLinks]);
 
       useEffect(() =>{
-        setIconState("fist-when-match");
-        setTimeout(() =>{
-          setIconState("fist");
-        },500)
+        if(props.matches > keepMatches) {
+          setIconState("fist-when-match");
+          setTimeout(() =>{
+            setIconState("fist");
+          },500)
+        }
+        setKeepMatches(props.matches)
       }, [props.matches])
 
     return (
@@ -49,6 +53,7 @@ export default function Navbar(props) {
                 </div>
                 
                 <ul className='profile-icons'>
+                  <span className='sign-out' onClick={props.Logout}>Sign Out</span>
                   {/* {iconLinks.map((iconLink) =>{
                       const {id,url,icon} = iconLink;
                       return <li key={id}>

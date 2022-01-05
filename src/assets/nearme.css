@@ -1,0 +1,9 @@
+.versus {
+    justify-content: space-evenly;
+}
+
+.vs-title{
+    font-family: "Mortal Kombat 4";
+   margin-top: 10rem;
+   color: #501010;
+}

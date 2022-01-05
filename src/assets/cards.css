@@ -11,8 +11,7 @@
 }
 
 
-.card {
-    position: relative;
+.main-card {
     width: 37.5rem;
     padding: 1.25rem;
     max-width: 85vw;
@@ -31,8 +30,7 @@
     cursor: pointer;
 }
 
-.card > h3 {
-    position: absolute;
+.main-card > h3 {
     width: 90%;
     font-family: "Mortal Kombat 2";
     color: #641313;
@@ -40,7 +38,9 @@
     font-size: 3rem;
     border-radius: 20px;
     background-color:rgb(8, 8, 8);
-    bottom: 10px;
+    margin-top: 25rem;
+    margin-left: 1rem
+   
 }
 
 .swiper{
@@ -60,6 +60,11 @@
     font-family: "Mortal Kombat 2";
 }
 
+/* .card-matches {
+    position: relative;
+   
+} */
+
 .matches-container{
     display: flex;
     flex-direction: column;
@@ -72,26 +77,32 @@
     
 }
 
+.card-matches {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
 
 .match {
     position: relative;
     width: 15.5rem;
     padding: 1.25rem;
-    max-width: 85vw;
+    width: 100%;
     height: 25vh;
-    border-radius: 50%;
     background-size: cover;
     background-position: center;
-    box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
     margin-top: 3rem;
-    border:2px solid yellow;
-    
-    
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid green;
+  
 }
 
 .match > h3 {
     text-align: center;
-    width: 70%;
+    width: 20%;
     position: absolute;
     bottom: 1rem;
     font-family: "Mortal Kombat 2";
@@ -103,6 +114,33 @@
     margin-left: 1.2rem;
     margin-bottom: 1rem;
 }
+
+.match > img {
+    border-radius: 50%;
+    width: 18vw;
+    height: 22vh
+}
+
+/* .opponent{
+    position: absolute;
+    width: 80%;
+    height: 30vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    left: 20rem;
+    border: 2px solid blue;
+} */
+
+/* .info-container{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+} */
+
+
 .forfeit-btn{
     cursor: pointer;
     border-radius: 50%;
@@ -112,9 +150,15 @@
     background-color:#811a1a;
     font-family: 'Mortal Kombat 2';
     font-weight: 700;
+    transition: all 0.3s linear;
     z-index: 999;
 }
 
+.forfeit-btn:hover {
+    background-color:#d62b2b;
+    width:4.5vw;
+    height:5.5vh;
+}
 
 
 @media screen and (max-width: 800px) {
@@ -124,33 +168,4 @@
 
 }
 
-/* -------------- Oponnent Details Styling --------------*/
-.opponent{
-    width: 100%;
-    height: 100vh;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* position: absolute; */
-    border:2px solid green;
-   
-}
-
-.info-container {
-    height: 20vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
-
-.secondary-title{
-    border-bottom: 2px solid black;
-    width: 50%;
-    margin-left: 30rem;
-    
-}
 

@@ -58,7 +58,7 @@ const SwapCards= (props) => {
                 >
                     <div
                     style={{backgroundImage: `url(${person.images.md})`}} 
-                    className='card'>
+                    className='main-card'>
                     <h3>{person.name}</h3>
                     </div>
                 </TinderCard>}

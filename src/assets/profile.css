@@ -1,0 +1,79 @@
+@import url('http://fonts.cdnfonts.com/css/mortal-kombat');
+
+*{
+    box-sizing: border-box;
+   
+}
+
+
+
+.profile-container{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Mortal Kombat 2';
+    
+
+}
+
+.profile-container > h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.profile-img{
+    background-image: url('https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.6435-9/83030654_10217803132004350_9119205898672144384_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=iSUJ7mcu0iUAX-rHodU&_nc_ht=scontent.fsdv3-1.fna&oh=00_AT8McQLeNLI5KcEzfKlXW-DOmQqPi8lGrAMN38gVLjt5mg&oe=61F8DECA');
+
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+.user-score{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+.user-stats{
+    border-top: 2px solid #D3D3D3;
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.user-appearnce, .user-powerstats,
+.user-biography{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.profile-top{
+    text-align: center;
+}
+
+.profile-btn{
+    background: #811a1a;
+    font-family: 'Mortal Kombat 2';
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 7rem;
+    left: 15rem;
+    width: 5vw;
+    height: 4vh;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.profile-btn:hover {
+    background:#D3D3D3 ;
+}
+
+.save{
+    margin-left:7rem;
+}
