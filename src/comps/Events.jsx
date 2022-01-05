@@ -6,6 +6,7 @@ import Event from '../Event/Event';
 const Events = () => {
     const [event, setEvent] = useState("");
     const [time, setTime] = useState("");
+    const [location, setLocation] = useState("");
 
     const { addEvent } = useContext(GlobalContext);
     const { events } = useContext(GlobalContext);
@@ -16,7 +17,8 @@ const Events = () => {
         const newEvent = {
             id: Math.floor(Math.random() * 10000),
             event,
-            time
+            time,
+            location,
         }
 
         addEvent(newEvent);
@@ -24,6 +26,7 @@ const Events = () => {
         //reset form
         setEvent('')
         setTime('')
+        setLocation('')
     }
 
     return (
@@ -49,6 +52,12 @@ const Events = () => {
                         placeholder='Time'
                         value={time}
                         onChange={(e) => setTime(e.target.value)}
+                        />
+                        <input className='event-input-location' 
+                        type="text"
+                        placeholder='Location'
+                        value={location}
+                        onChange={(e) => setLocation(e.target.value)}
                         />
                         <button className='submit-btn'>Add Event</button>
                     </form>

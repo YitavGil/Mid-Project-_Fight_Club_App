@@ -20,11 +20,14 @@ const Event = ({item}) => {
 
     const { deleteEvent } = useContext(GlobalContext);
     return (
-        <div>
+        <div className='event-positioning'>
               <li>
                     <h2><span className='event-type'>{item.event}</span></h2>
                     <img src={fightImage} />
-                    <h3><span className='event-time'>{item.time}</span></h3>
+                    <div className='events-info'>
+                        <h3><span className='event-time'>{item.time}</span></h3>
+                        <h3><span className='event-location'>{item.location}</span></h3>
+                    </div>
                     <span onClick={() => deleteEvent(item.id)} className='action'> &#10007;</span>
                 </li>
 

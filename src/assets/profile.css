@@ -77,3 +77,13 @@
 .save{
     margin-left:7rem;
 }
+
+@media screen and (max-width: 800px){
+    .profile-btn{
+        width: 12vw;
+    } 
+    .user-appearnce, .user-powerstats,
+.user-biography{
+    justify-content: space-around;
+}
+}

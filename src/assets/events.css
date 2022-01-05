@@ -1,3 +1,22 @@
+.content{
+    font-family: "Mortal Kombat 2";
+}
+
+.add-event > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-event > form > input {
+    margin-top: 0.5rem;
+    text-indent: 5px;
+}
+
+.add-event > form > button{
+    margin-top: 0.5rem;
+}
+
+
 .content {
     width: 100%;
     height: 90vh;
@@ -26,12 +45,17 @@
     width: 80vw;
     height: 30vh;
     margin-top: 16rem;
+    color:#520e0e;
+    
+}
+.event-positioning{
+    position: relative;
+    
 }
 
-.event-type{
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    
+.events-info{
+    display: flex;
+    justify-content: space-between;
 }
 .event-time{
     bottom:0;
@@ -41,10 +65,9 @@
     margin-left: 1rem;
 }
 
-img{
-    width: 500px;
-    height:300px;
-    position: relative;
+ img{
+    width: 30vw;
+    height: 30vh;
 }
 
 .action {
@@ -52,6 +75,20 @@ img{
     font-weight: bold;
     cursor: pointer;
     font-size: 2rem;
+    top:0;
     position: absolute;
+    right:0;
 }
 
+.event-location{
+    right: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .event-positioning{
+        width: 100%;
+    }
+     img{
+        width:100%;
+    }
+}
