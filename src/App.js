@@ -15,7 +15,7 @@ import Premium from "./comps/Premium";
 function App() {
   const adminUser = {
     email: "admin@admin.com",
-    password: "admin123"
+    password: "12345"
   }
 
   const [heroes, setHeroes] = useState([]);
