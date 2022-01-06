@@ -42,3 +42,14 @@
     background:#df3232;
     color: black;
 }
+
+@media screen and (max-width: 800px){
+    .form-inner{
+       width:80%;
+    }
+
+    .sign-in{
+        width: 15vw;
+        height: 5vh;
+    }
+}

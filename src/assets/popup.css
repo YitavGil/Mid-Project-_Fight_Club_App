@@ -48,7 +48,26 @@
   color: rgb(6, 196, 6);
 }
 
+@media screen and (max-width: 800px) {
+  .popup{
+    height: 60vh;
+    margin-right: -25rem;
+    margin-top: 1rem;
+    width:70%;
+  }
 
+  .popup-inner{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .close-btn{
+    width: 16vw;
+    height:4vh;
+  }
+
+  
+}
 
 @keyframes slideInFromTop {
     0% {
