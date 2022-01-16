@@ -35,28 +35,11 @@ const NearMe = (props) => {
             }
             console.log(tempArray)
             setPairs(tempArray)
-            //findFights()
+           
 
          
            
         },[])
-        // let proxy = "https://api.codetabs.com/v1/proxy/?quest=";
-        // const findFights = () => {
-        //     const config = {
-        //         method: 'get',
-        //         url: 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=32.0857546%2C34.9774097&radius=15000&type=restaurant&keyword=cruise&key=AIzaSyA-5JjP1F92Y_oSSEiVp8kY0bg0QuuIRE4',
-        //         headers: { }
-        //       };
-              
-        //       axios(config)
-        //       .then(function (response) {
-        //         console.log(JSON.stringify(response.data));
-        //       })
-        //       .catch(function (error) {
-        //         console.log(error);
-        //       });
-        // }
-        
         
 
     return(
