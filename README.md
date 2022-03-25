@@ -10,7 +10,6 @@ The email must be: admin@admin.com
 Password: 12345
 
 ### Features: 
-* Each to the webstie pages has its own component.
 * The home page was designed to mimic the main page of the Tinder app. The slide effect was achived by installing the external library "react tinder card"
 * Since this is a front-end project without real users database, the user can only be "matched" with popular super-heroes from the Superheros API.
 * Matched super heroes are saved in the "maches" page represented by the fist-icon. The user can see his opponent's stats and remove the match.
