@@ -21,7 +21,6 @@ Password: 12345
 * React hooks
 * React routers
 * Context API
-* REST API
 * sass
 
 #### Issues:
